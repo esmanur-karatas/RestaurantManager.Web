@@ -1,0 +1,125 @@
+﻿@model UpdateAboutDto
+@{
+    ViewData["Title"] = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Hakkımızda İşlemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Hakkımızda Bilgisi Ekle</div>
+						</div>
+						<input type="hidden" asp-for="AboutId" />
+						<div class="card-body">
+							<div class="form-group">
+								<label for="aboutTitle">Başlık</label>
+								<input type="text" class="form-control" asp-for="AboutTitle" id="aboutTitle">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="aboutSubTitle<">Alt Başlık</label>
+								<input type="text" class="form-control" asp-for="AboutSubtitle" id="aboutSubTitle">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="aboutDescription">Açıklama</label>
+								<input type="text" class="form-control" asp-for="AboutDescription" id="aboutDescription">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="aboutNumberOne">Number One </label>
+								<input type="text" class="form-control" asp-for="AboutNumberOne" id="aboutNumberOne">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="aboutNumberTwo">Number Two</label>
+								<input type="text" class="form-control" asp-for="AboutNumberTwo" id="aboutNumberTwo">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="aboutNumberOneTitle">Number One Title</label>
+								<input type="text" class="form-control" asp-for="AboutNumberOneTitle" id="aboutNumberOneTitle">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="aboutNumberOneTitle">Number Two Title</label>
+								<input type="text" class="form-control" asp-for="AboutNumberTwoTitle" id="aboutNumberOneTitle">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="aboutNumberOneDescription">Number One Description</label>
+								<input type="text" class="form-control" asp-for="AboutDescriptionOneTitle" id="aboutNumberOneDescription">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="aboutNumberTwoDescription">Number Two Description</label>
+								<input type="text" class="form-control" asp-for="AboutDescriptionTwoTitle" id="aboutNumberTwoDescription">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="image1">Görsel 1</label>
+								<input type="text" class="form-control" asp-for="AboutImageUrlOne" id="image1">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="image2">Görsel 2</label>
+								<input type="text" class="form-control" asp-for="AboutImageUrlTwo" id="image2">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="image3">Görsel 3 </label>
+								<input type="text" class="form-control" asp-for="AboutImageUrlThree" id="image3">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="image4">Görsel 4</label>
+								<input type="text" class="form-control" asp-for="AboutImageUrlFour" id="image4">
+							</div>
+						</div>
+
+						<div class="card-action">
+							<button class="btn btn-success">Güncelle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+

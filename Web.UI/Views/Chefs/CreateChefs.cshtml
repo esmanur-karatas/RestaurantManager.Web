@@ -1,0 +1,62 @@
+﻿@model CreateChefsDto
+@{
+    ViewData["Title"] = "CreateChefs";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Şef Bilgileri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Şef Ekle</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="chefsTitle">Şef Başlık</label>
+								<input type="text" class="form-control" asp-for="ChefsTitle" id="chefsTitle">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="chefsSubtitle">Şef Alt Başlık</label>
+								<input type="text" class="form-control" asp-for="ChefsSubtitle" id="chefsSubtitle">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="chefsName">Şef Adı</label>
+								<input type="text" class="form-control" asp-for="ChefsName" id="chefsName">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="chefsDescription">Şef Açıklaması</label>
+								<input type="text" class="form-control" asp-for="ChefsDescription" id="chefsDescription">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="chefsImgUrl">Şef Görsel</label>
+								<input type="text" class="form-control" asp-for="ChefsImageUrl" id="chefsImgUrl">
+							</div>
+						</div>
+
+						<div class="card-action">
+							<button class="btn btn-success">Ekle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+

@@ -1,0 +1,95 @@
+﻿@model UpdatePopularMenuDto
+@{
+    ViewData["Title"] = "UpdatePopularMenu";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Populer Menu İşlemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Populer Menu Ekle</div>
+						</div>
+						<input type="hidden" asp-for="PopularMenuId" />
+						<div class="card-body">
+							<div class="form-group">
+								<label for="breakfestName">Kahvaltı Adı</label>
+								<input type="text" class="form-control" asp-for="BreakfastName" id="breakfestName">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="breakfestDescription">Kahvaltı Açıklaması</label>
+								<input type="text" class="form-control" asp-for="BreakfestDescription" id="breakfestDescription">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="breakfestPrice">Kahvaltı Fiyatı</label>
+								<input type="text" class="form-control" asp-for="BreakfastPrice" id="breakfestPrice">
+							</div>
+						</div>
+
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="launchtName">Öğle Yemeği Adı</label>
+								<input type="text" class="form-control" asp-for="LaunchName" id="launchtName">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="launchDescription">Öğle Yemeği Açıklaması</label>
+								<input type="text" class="form-control" asp-for="LaunchDescription" id="launchDescription">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="launchPrice">Öğle Yemeği Fiyatı</label>
+								<input type="text" class="form-control" asp-for="LaunchPrice" id="launchPrice">
+							</div>
+						</div>
+
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="dinnerName">Akşam Yemeği Adı</label>
+								<input type="text" class="form-control" asp-for="DinnerName" id="dinnerName">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="dinnerDescription">Akşam Yemeği Açıklaması</label>
+								<input type="text" class="form-control" asp-for="DinnerDescription" id="dinnerDescription">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="dinnerPrice">Akşam Yemeği Fiyatı</label>
+								<input type="text" class="form-control" asp-for="DinnerPrice" id="dinnerPrice">
+							</div>
+						</div>
+
+						<div class="card-action">
+							<button class="btn btn-success">Güncelle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+

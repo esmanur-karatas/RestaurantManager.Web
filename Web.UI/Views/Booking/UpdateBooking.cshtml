@@ -1,0 +1,80 @@
+﻿@model UpdateBookingDto
+@{
+    ViewData["Title"] = "UpdateBooking";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Rezervasyon İşlemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Rezervasyon Ekle</div>
+						</div>
+						<input type="hidden" asp-for="BookingId" />
+						<div class="card-body">
+							<div class="form-group">
+								<label for="bookingTitle">Başlık</label>
+								<input type="text" class="form-control" asp-for="BookingTitle" id="bookingTitle">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="bookingSubTitle">Alt Başlık</label>
+								<input type="text" class="form-control" asp-for="BookingSubtitle" id="bookingSubTitle">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="bookingName">İsim</label>
+								<input type="text" class="form-control" asp-for="BookingName" id="bookingName">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="bookingEmail">Mail</label>
+								<input type="text" class="form-control" asp-for="BookingEmail" id="bookingEmail">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="bookingDateTime<">Tarih</label>
+								<input type="date" class="form-control" asp-for="BookingDateTime" id="bookingDateTime">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="bookingPersonCount">Kişi Sayısı</label>
+								<input type="number" class="form-control" asp-for="BookingPersonCount" id="bookingPersonCount">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label for="bookingSpecialRequest">Özel İstek</label>
+								<input type="text" class="form-control" asp-for="BookingSpecialRequest" id="bookingSpecialRequest">
+							</div>
+						</div>
+						<div class="card-action">
+							<button class="btn btn-success">Güncelle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+

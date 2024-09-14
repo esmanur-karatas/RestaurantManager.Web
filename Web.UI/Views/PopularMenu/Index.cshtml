@@ -1,0 +1,60 @@
+﻿@model List<ResultPopularMenuDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Popüler Menü İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Popüler Menü Listesi</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-sub">
+                            Popüler Menü İle İlgili İşlemleri Aşağıdan Gerçekleştirebilirsiniz.
+                        </div>
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Kahvaltı Adı</th>
+                                    <th scope="col">Kahvaltı Fiyatı</th>
+                                    <th scope="col">Öğle Yemeği Adı</th>
+                                    <th scope="col">Öğle Yemeği Fiyatı</th>
+                                    <th scope="col">Akşam Yemeği Adı</th>
+                                    <th scope="col">Akşam Yemeği Fiyatı</th>
+                                    <th scope="col">Sil</th>
+                                    <th scope="col">Güncelle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.PopularMenuId</td>
+                                        <td>@item.BreakfastName</td>
+                                        <td>@item.BreakfastPrice</td>
+                                        <td>@item.LaunchName</td>
+                                        <td>@item.LaunchPrice</td>
+                                        <td>@item.DinnerName</td>
+                                        <td>@item.DinnerPrice</td>
+                                        <td><a href="/PopularMenu/DeletePopularMenu/@item.PopularMenuId" class="btn btn-outline-danger">Sil</a></td>
+                                        <td><a href="/PopularMenu/UpdatePopularMenu/@item.PopularMenuId" class="btn btn-outline-success">Güncelle</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <a href="/PopularMenu/CreatePopularMenu" class="btn btn-outline-primary">Popüler Menü Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
