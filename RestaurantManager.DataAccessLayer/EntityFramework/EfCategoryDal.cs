@@ -10,5 +10,11 @@ namespace RestaurantManager.DataAccessLayer.EntityFramework
         public EfCategoryDal(RestaurantManagerContext context) : base(context)
         {
         }
+
+        public int CategoryCount()
+        {
+            using var context = new RestaurantManagerContext();
+            return context.Categories.Count();
+        }
     }
 }
